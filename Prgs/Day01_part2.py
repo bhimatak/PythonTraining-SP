@@ -136,6 +136,5 @@ start = 0
 end = len(str1)-1
 print(str1[:-1:1])
 
-last char [-1]
-last char [len(str1)-1]
+
 
