@@ -20,3 +20,9 @@ print(pow(2,3))
 print(sqrt(4))
 print(factorial(5))
 print(pi)
+
+str1 = "abcd"
+str2 = "efgh"
+
+str1 = "".join(list(str2))
+print(str1)
