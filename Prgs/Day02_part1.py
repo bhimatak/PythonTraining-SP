@@ -55,7 +55,7 @@ print(str12.startswith("this"))
 
 
 '''
-
+'''
 
 for i in range(10):
     print(i)
@@ -73,3 +73,4 @@ while i<10:
 else:
     #acc +=1
     print(f"count: {i}")
+'''
