@@ -26,3 +26,11 @@ str2 = "efgh"
 
 str1 = "".join(list(str2))
 print(str1)
+
+
+A = [4, 3, 2, 5, 8, 6, 7]
+
+i = 3
+max = A[i]
+print("MAX: ",max)
+print(max(A[0:i]))
