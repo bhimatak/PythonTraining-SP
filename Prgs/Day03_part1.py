@@ -48,7 +48,7 @@ print({1, 2, 3, 4}.symmetric_difference({2, 3, 4,5,8,9}))
 print({1,2,5}.issuperset({1,2,3,5}))
 ==================================================
 '''
-
+'''
 
 l = []
 for i in range(1,101):
@@ -66,10 +66,79 @@ l1 =[1,2,3,4,5]
 # l2 = [True, False,True, False,True]
 # 'i' in "bhima"
 l2 = [0 if i%2 == 0 else 1 for i in l1]
+'''
 '''for i in l1:
     if i%2 == 0:
         l2.append(False)
     else:
         l2.append(True)
 '''
+'''
 print(l2)
+
+l1 = [10,20,30]
+# l2 = []
+# for i in range(5):
+#     for val in l1:
+#         l2.append((val))
+l2 = [val for i in range(5) for val in l1]
+# l2.sort()
+# print(l2)
+for x in [[2, 1], [4, 3], [0, 1]]:
+    print(x, type(x))
+    print(sorted(x))
+
+l1 = [2,3,4]
+l2 = ['a','b','c']
+d1 = dict({y:x for x in l1 for y in l2})
+print(d1)
+'''
+'''
+t1 = tuple(x for x in range(5))
+print(t1, type(t1))
+'''
+'''
+int main()
+{
+name_func();
+
+return 0;
+}
+
+int name_func(int a,int b,int c)
+{
+
+    return (int)
+}
+'''
+def name_func():
+    print("hello")
+
+name_func()
+
+def isPrime(num):
+    flag = False
+    count = 0
+    for i in range(2,(num//2)+1):
+        count +=1
+        if num%i == 0:
+            flag =True
+            break
+
+    print(count)
+    if flag == True:
+        print("not Prime")
+    else:
+        print("Prime")
+
+isPrime(17)
+
+
+'''
+given num can be expressed as sum of two prime numbers
+
+34 = 17+17
+34 = 29+5
+34 = 31+3
+34 = 11+23
+'''
