@@ -119,6 +119,8 @@ name_func()
 def isPrime(num):
     flag = False
     count = 0
+    if num <= 1:
+        return True
     for i in range(2,(num//2)+1):
         count +=1
         if num%i == 0:
@@ -133,10 +135,23 @@ def isPrime(num):
     #     # print("Prime")
     return flag
 
-if isPrime(17) == True:
-    print("Not Prime")
-else:
-    print("Prime")
+
+GN = 34
+count=0
+l = []
+for i in range(GN):
+    if not isPrime(i):
+        l.append(i)
+print(l)
+
+for i in range(len(l)):
+    for j in range(i,len(l)):
+        # if not isPrime(i) and not isPrime(j):
+        if l[i]+l[j] == GN:
+            print(l[i],l[j])
+            count+=1
+
+print(count)
 
 
 '''
