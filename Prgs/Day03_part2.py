@@ -76,7 +76,7 @@ b=20
 l3 = list(map(f1, l1))
 print(l3)
 '''
-
+'''
 def f3(x,y):
     return x+y
 
@@ -85,3 +85,44 @@ b = {40,50,60,70,35}
 
 l6 = list(map(f3,a,b))
 print(l6)
+'''
+'''
+def f1(x):
+    if x<18:
+        return False
+    else:
+        return True
+
+list1 = list(filter(f1, [5,8,18,20,3,22]))
+print(list1, type(list1))
+
+# for i in list1:
+#     print(i)
+x = iter(list1)
+print(next(x))
+print(next(x))
+print(next(x))
+print(next(x))
+'''
+
+def f1():
+    for i in range(11):
+        if i%2 == 0:
+            yield i
+
+l1 = f1()
+print(l1, type(l1))
+for i in l1:
+    print(i)
+l2 = f1()
+print(l2, type(l2))
+
+for x in f1():
+    print(x)
+
+
+
+
+
+
+
