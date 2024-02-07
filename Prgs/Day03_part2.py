@@ -104,7 +104,7 @@ print(next(x))
 print(next(x))
 print(next(x))
 '''
-
+'''
 def f1():
     for i in range(11):
         if i%2 == 0:
@@ -119,10 +119,32 @@ print(l2, type(l2))
 
 for x in f1():
     print(x)
+'''
 
 
 
+def func1():
+    print("Hello1")
 
+def func2():
+    print("hello2")
+f = func1
+
+# print(f, type(f))
+# f()
+
+f = func2
+# print(f, type(f))
+# f()
+
+
+def retFunc(f):
+    print("in the retFunc")
+    f()
+    print("out of retFunc")
+
+retFunc(func1)
+retFunc(func2)
 
 
 
