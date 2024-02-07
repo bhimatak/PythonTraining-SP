@@ -125,13 +125,18 @@ def isPrime(num):
             flag =True
             break
 
-    print(count)
-    if flag == True:
-        print("not Prime")
-    else:
-        print("Prime")
+    # print(count)
+    # if flag == True:
+    #     # print("not Prime")
+    #     return
+    # else:
+    #     # print("Prime")
+    return flag
 
-isPrime(17)
+if isPrime(17) == True:
+    print("Not Prime")
+else:
+    print("Prime")
 
 
 '''
