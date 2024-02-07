@@ -13,5 +13,6 @@ def f1():
 
 in1 = outter_fun()
 print(in1)
-in1()
+retval = in1()
+print(retval)
 
