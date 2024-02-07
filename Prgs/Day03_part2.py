@@ -137,14 +137,31 @@ f = func2
 # print(f, type(f))
 # f()
 
-
+print("=================================")
 def retFunc(f):
     print("in the retFunc")
-    f()
+    def func1():
+        print("hello")
+    func1()
     print("out of retFunc")
+    return f
 
-retFunc(func1)
-retFunc(func2)
+'''
+str1 ="bhima"
+print(id(str1))
+str1 = str1+"Shankar"
+print(id(str1))
+'''
+# func1 = retFunc(func1)
+#
+# func1()
+# retFunc(func2)
+
+@retFunc
+def func3():
+    print("hello 3")
+
+func3()
 
 
 
