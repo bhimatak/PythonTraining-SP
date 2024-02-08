@@ -1,17 +1,17 @@
 class Person:
     NAME = "XYZ"
     def __init__(self, name="XYZ", phno=0):
-        self._name = name
-        self._phno = phno
+        self.__name = name
+        self.__phno = phno
 
     def printDetails(self):
-        print(f"Name: {self._name}\nPhno: {self._phno}")
+        print(f"Name: {self.__name}\nPhno: {self.__phno}")
 
     def getName(self):
-        return self._name
+        return self.__name
 
     def getPhno(self):
-        return self._phno
+        return self.__phno
 
 
 class Emp(Person):
@@ -22,7 +22,7 @@ class Emp(Person):
         self.__sal = sal
 
     def printDetEmp(self):
-        print(self.NAME)
+        # print(self.NAME)
         # print(self.getPhno())
         print(f"ID: {self.__id}\nSalary: {self.__sal}")
 
