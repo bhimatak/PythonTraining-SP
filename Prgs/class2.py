@@ -50,15 +50,3 @@ p2.printDetails()
 
 
 
-'''
-define a class of rectangle
-width and height
-
-r1 = h10,w20
-r2 = h30,w40
-
-rest = r1+r2 = h40,w60
-
-
-'''
-
