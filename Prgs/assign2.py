@@ -49,3 +49,4 @@ resultRec = Rectangle(r1.getH()+r2.getH(),r1.getW()+r2.getW())
 resultRec.printDetails()
 print(type(resultRec))
 
+
