@@ -16,6 +16,10 @@ class Rectangle:
         self.__h = h
         self.__w = w
 
+    def __add__(self, other):
+        return Rectangle(self.__h+other.__h, self.__w+other.__w)
+
+
     def printDetails(self):
         print(f"Height: {self.__h}\nWidth: {self.__w}")
 
@@ -48,5 +52,7 @@ resultRec = Rectangle(r1.getH()+r2.getH(),r1.getW()+r2.getW())
 
 resultRec.printDetails()
 print(type(resultRec))
-
+r3 = r1+r2
+print(r3, type(r3))
+r3.printDetails()
 

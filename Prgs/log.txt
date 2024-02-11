@@ -1,0 +1,13 @@
+============================= test session starts =============================
+platform win32 -- Python 3.11.3, pytest-8.0.0, pluggy-1.4.0 -- C:\Python\Python311\python.exe
+cachedir: .pytest_cache
+rootdir: D:\Lennox\Repo\PythonTrainingSP\Prgs
+plugins: anyio-3.6.2
+collecting ... collected 2 items
+
+test_pytest1.py::test_cal_total_01 PASSED                                [ 50%]
+test_pytest1.py::test_mul SKIPPED (I dont know)                          [100%]
+
+=========================== short test summary info ===========================
+SKIPPED [1] test_pytest1.py:20: I dont know
+======================== 1 passed, 1 skipped in 0.02s =========================
